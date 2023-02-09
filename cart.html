@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="title title1">
+      <nav class="navbar bg-light navbar-expand-lg">
+        <a class = "navbar-brand"href="index.html">CakeArea</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo"></button>
+        <span class="navbar-toggler-icon"></span>
+
+        <div class="collapse navbar-collapse nav-content" id="navbarToggleDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link gap" href="cart.html">cart <span class="pow">0</span></a>
+            </li>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle gap" href="" data-bs-toggle="dropdown">
+                Location</a>
+        <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="">Mumbai</a></li>
+        <li><a class="dropdown-item" href="">Bengaluru</a></li>
+        <li><a class="dropdown-item" href="">Agra</a></li>
+        <li><a class="dropdown-item" href="">Patna</a></li>
+        </ul>
+          </li>
+          <li><input class = "nav-link bg-light search gap" type="text" placeholder="Search.."></li>
+          <li class = "nav-item gap"><a class = "nav-link" href="login.html">Login/Signup</a></li>
+        </div>
+        </ul></div>
+
+          <div class="cart_head">
+            <h1 class="">Your Cart</h1>
+          </div>
+
+        <div class="container">
+          <div class="headers">
+            <h5 class="product-title">Product</h5>
+            <h5 class="price">Price</h5>
+            <h5 class="quantity">Quantity</h5>
+            <h5 class="total">Total</h5>
+          </div>
+         
+          <div class="products">
+
+          </div>
+          <script>
+            // Retrieve the product id from local storage
+            var productId = localStorage.getItem("productId");
+            // Use the product id to display the specific product details on the cart page
+            // ...
+        </script>
+        </div>
+        <a class="taddet" href="order.html"><button class="addet" onclick="placeOrder(productId)">Place Order</button></a>
+        <a  href="status.php"><button >My order</button></a>
+        
+          <!-- <a class="addet" href="order.html">Add Details</a> -->
+          
+        <script src="cart.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <h2>SHOP</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-products">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price sm-hide">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+        </div>
+        <div class="products">
+
+        </div>
+    </div>
+    <script src="cart.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+</html> -->

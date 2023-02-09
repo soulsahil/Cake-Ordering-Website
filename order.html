@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Order Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body >
+    <a class = "navbar-brand cakear"href="index.html">CakeArea</a>
+    <img class="imagesize" src="images/orders.jpg" alt="">
+    <div class="orders">
+    <h1>Place an Order</h1>
+    
+    <!-- <form method="post" action="submit_order.php"> -->
+      <form action="email.php" method="post">
+      <!-- <input type="hidden" name="product_id" value="<?php echo $_GET['product_id']; ?>">
+    <input type="hidden" name="quantity" value="<?php echo $_GET['quantity']; ?>"> -->
+      <label class="ordname" for="name">Name:</label><br>
+      <input class="namehei" type="text" id="name" name="name" required><br>
+      <label class="ordadd" for="address">Address:</label><br>
+      <input class="addhei" type="text" id="address" name="address" required><br></div>
+      <!-- <label for="cake">Cake:</label><br>
+      <input type="text" id="cake" name="cake" required><br> -->
+      <!-- <label for="quantity">Quantity:</label><br>
+      <input type="number" id="quantity" name="quantity" required><br>
+      <label for="price">Price:</label><br>
+    <input type="number" id="price" name="price" required><br><br> -->
+    <!-- <input type="button" value="Submit" onclick="submitOrder()">
+     -->
+     <script>
+        var orderProductId = localStorage.getItem("productId");
+    </script>
+       <a href="successpage.html"><input class="subm" type="button" value="Submit" onclick="submitOrder(orderProductId)"></a></form>
+     <script>
+       //       var connection = $.mysql.createConnection({
+         //     host: 'localhost',
+         //     user: 'root',
+         //     password: '',
+         //     database: 'cake ordering website'
+         // });
+         // connection.connect();
+         function submitOrder(orderProductId) {
+            // $.ajax({ url: 'get_product.php', type: 'GET', data: { product_id: orderProductId }, success: function(response) { var product = JSON.parse(response); if(product){ var name = document.getElementById('name').value; var address = document.getElementById('address').value; var query = 'INSERT INTO orders (product_id, product_name, name, address) VALUES (' + orderProductId + ', ' + product.p_name + ', ' + name + ', ' + address + ')'; connection.query(query, (error, results, fields) => { if (error) { alert('Error: ' + error); } else { alert('Order placed successfully.'); }  }); } connection.end();} });}
+            $.ajax({
+        url: 'get_product.php',
+        type: 'GET',
+        data: { product_id: orderProductId },
+        success: function(response) {
+            var product = JSON.parse(response);
+            if (product) {
+                var name = document.getElementById('name').value;
+                var address = document.getElementById('address').value;
+                $.ajax({
+                    url: 'submit_order.php',
+                    type: 'POST',
+                    data: { orderProductId: orderProductId, productName: product.p_name, name: name, address: address },
+                    success: function(response) {
+                        if (response == 'success') {
+                            alert('Order placed successfully.');
+                        } else {
+                            alert('Alert: ' + response);
+                        }
+                    }
+                });
+            }
+        }
+    });
+  }
+            </script>
+     <!-- <script>
+    // Retrieve the product id from local storage
+    var orderProductId = localStorage.getItem("orderProductId");
+    // Use the product id to retrieve the specific product details from the database or display the specific product details on the order page
+    // ...
+</script> -->
+<!-- add here  -->
+<!-- <script>
+//   // Connect to the database
+//   var conn = mysqli_connect("localhost", "root", "", "cake ordering website");
+
+//   // Create a query to select the specific product name from the products table
+//   var query = "SELECT name FROM products WHERE id = " + orderProductId;
+
+//   // Execute the query and retrieve the product name
+//   var result = conn.query(query);
+//   var productName = result[0].name;
+// </script> -->
+
+ <!-- <script>
+//   function submitOrder() {
+//       // Get the values of the input fields
+//       var name = document.getElementById("name").value;
+//       var address = document.getElementById("address").value;
+//       // Create an SQL query to insert the user's name, product name, address and product id into the orders table
+//       var query = "INSERT INTO orders (product_id, product_name, name, address) VALUES (" + orderProductId + ", '" + productName + "', '" + name + "', '" + address + "')";
+
+//       // Execute the query
+//       var result = conn.query(query);
+
+//       if (result) {
+//           alert("Order placed successfully.");
+//       } else {
+//           alert("Error: " + query + "<br>" + conn.error);
+//       }
+//   }
+// </script> -->
+</body>
+</html>

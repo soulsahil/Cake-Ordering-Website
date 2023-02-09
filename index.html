@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>CakeArea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:ital,wght@0,300;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="title title1">
+        <nav class="navbar bg-light navbar-expand-lg">
+            <a class="navbar-brand" href="">CakeArea</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo"></button>
+            <span class="navbar-toggler-icon"></span>
+
+
+            <div class="collapse navbar-collapse nav-content" id="navbarToggleDemo02">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link gap" href="cart.html">cart<ion-icon name="cart-outline"></ion-icon><span class="pow">0</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle gap" href="" data-bs-toggle="dropdown">
+                Location</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="">Mumbai</a></li>
+                            <li><a class="dropdown-item" href="">Bengaluru</a></li>
+                            <li><a class="dropdown-item" href="">Agra</a></li>
+                            <li><a class="dropdown-item" href="">Patna</a></li>
+                        </ul>
+                    </li>
+                    <li><input class="nav-link bg-light search gap" type="text" placeholder="Search.."></li>
+                    <li class="nav-item gap"><a class="nav-link" href="login.html" id="signup-login-header">Login/Signup</a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+
+
+    <div class="main-grid">
+        <div class="centre">
+            <a href="#christmas-cakes"><img class="circle circle1" src="images/christmas cake.jpg"></a>
+            <p class="text">Christmas Cake</p>
+        </div>
+        <div class="">
+            <a href="#birthday-cake"> <img class="circle" src="images/birthday cake.jpg"> </a>
+            <p class="text">Birthday Cake</p>
+        </div>
+        <div class="">
+            <a href="#kids-birthday-cake"><img class="circle" src="images/kids birthday cake.webp"></a>
+            <p class="text">Kids birthday <br> cake</p>
+        </div>
+        <div class="">
+            <a href="#anniversary-cake"> <img class="circle" src="images/anniversary cake.webp"> </a>
+            <p class="text">Anniversary Cake</p>
+        </div>
+        <div class="">
+            <a href="#eggless-cake"> <img class="circle" src="images/eggless cake.jpg"> </a>
+            <p class="text">Eggless Cake</p>
+        </div>
+        <div class="">
+            <a href="#pinata-cake"> <img class="circle" src="images/pinata cake.jpg"> </a>
+            <p class="text">Pinata Cake</p>
+        </div>
+        <div class="">
+            <a href="#photo-cake"> <img class="circle" src="images/photo cake.webp"> </a>
+            <p class="text">Photo Cake</p>
+        </div>
+        <div class="">
+            <a href="#egg-cakes"><img class="circle" src="images/egg cake.jpeg"></a>
+            <p class="text">Egg Cake</p>
+        </div>
+        <div class="">
+            <a href="#luxury-chocolate-cake"> <img class="circle" src="images/luxury chocolate cake.jpg"> </a>
+            <p class="text">Luxury Chocolate <br> Cake</p>
+        </div>
+
+        <div>
+            <a href="#custom-cakes"><img class="circle" src="images/custom cake.jpg"></a>
+            <p class="text">Custom Cake</p>
+        </div>
+        <div class="">
+            <a href="#cheese-cakes"><img class="circle" src="images/cheese cake.jpg"></a>
+            <p class="text">Cheese Cake</p>
+        </div>
+        <div class="">
+            <a href="#cup-cakes"><img class="circle" src="images/cupcake.jpg"></a>
+            <p class="text">Cupcake</p>
+        </div>
+        <div class="">
+            <a href="#tier-cakes"><img class="circle" src="images/tier cakes.webp"></a>
+            <p class="text">Tier Cake</p>
+        </div>
+    </div>
+    <div class="col-xs-6 bar_grid">
+        <div class="bars"></div>
+        <div class="pad_text">
+            <p class="pad">BEST SELLING</p>
+        </div>
+        <div class="bars"></div>
+    </div>
+
+    <div class="grid title">
+        <div class="">
+            <img class='image image2' src="images/pineapple.webp" alt="pineapple">
+            <p class="name">Pineapple Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹500</p>
+                <button class="addToCart" onclick="addToCart(1)" href="">Add To Cart</button>
+            </div>
+
+        </div>
+        <div class="">
+            <img class='image' src="images/chocolatecake.webp" alt="images/chocolatecake.webp">
+            <p class="name">Chocolate Cake</p>
+            <div class="parent">
+
+                <p class='pricein'>Price: ₹500</p>
+                <button class="addToCart" onclick="addToCart(2)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class='image' src="images/butterscotchcake.jpg" alt="">
+            <p class="name">Butterscotch Cake</p>
+            <div class="parent">
+
+                <p class='pricein'>Price: ₹600</p>
+                <button class="addToCart" onclick="addToCart(3)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class='image' src="images/blueberry cake.jpg" alt="">
+            <p class="name">Blueberry Cake</p>
+            <div class="parent">
+
+                <p class='pricein'>Price: ₹700</p>
+                <button class="addToCart" onclick="addToCart(4)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class='image' src="images/dark forest.webp" alt="">
+            <p class="name">Dark Forest Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹650</p>
+                <button class="addToCart" onclick="addToCart(5)" href="">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="bar_grid pad_xs">
+        <div class="bars "></div>
+        <div class="pad_text">
+            <p class="pad " id="christmas-cakes">CHRISTMAS CAKES</p>
+        </div>
+        <div class="bars"></div>
+    </div>
+    <div class="grid title">
+        <div class="">
+            <img class="image" src="images/christmas1.jpg" alt="">
+            <p class="name">Snowy Choclate Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹800</p>
+                <button class="addToCart" onclick="addToCart(6)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/christmas2.jpg" alt="">
+            <p class="name">Christmas Sponge Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹450</p>
+                <button class="addToCart" onclick="addToCart(7)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/christmas3.jpg" alt="">
+            <p class="name">Cookie Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹850</p>
+                <button class="addToCart" onclick="addToCart(8)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/christmas4.jpg" alt="">
+            <p class="name">Snow Santa Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹600</p>
+                <button class="addToCart" onclick="addToCart(9)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/christmas5.jpg" alt="">
+            <p class="name">Pine leaf Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹600</p>
+                <button class="addToCart" onclick="addToCart(10)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/christmas6.jpg" alt="">
+            <p class="name">Dress Berry Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹700</p>
+                <button class="addToCart" onclick="addToCart(11)" href="">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bar_grid pad_xs">
+        <div class="bars "></div>
+        <div class="pad_text">
+            <p class="pad" id="birthday-cake">BIRTHDAY CAKES</p>
+        </div>
+        <div class="bars"></div>
+    </div>
+    <div class="grid title">
+        <div class="">
+            <img class="image" src="images/bday1.webp" alt="">
+            <p class="name">Dark Chocolate Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹500</p>
+                <button class="addToCart" onclick="addToCart(12)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/bday2.webp" alt="">
+            <p class="name">Pink Rose Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹900</p>
+                <button class="addToCart" onclick="addToCart(13)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/bday3.jpg" alt="">
+            <p class="name">Golden Rose Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹800</p>
+                <button class="addToCart" onclick="addToCart(14)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/bday4.webp" alt="">
+            <p class="name">Chocolate Flower Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹500</p>
+                <button class="addToCart" onclick="addToCart(15)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/bday5.webp" alt="">
+            <p class="name">Chocolate Vanilla Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹550</p>
+                <button class="addToCart" onclick="addToCart(16)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/bday6.jpg" alt="">
+            <p class="name">Pink Lotte Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹700</p>
+                <button class="addToCart" onclick="addToCart(17)" href="">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bar_grid pad_xs">
+        <div class="bars "></div>
+        <div class="pad_text">
+            <p class="pad" id="kids-birthday-cake">KIDS BIRTHDAY CAKES</p>
+        </div>
+        <div class="bars"></div>
+    </div>
+    <div class="grid title">
+        <div class="">
+            <img class="image" src="images/kids1.webp" alt="">
+            <p class="name">Paw Patrol Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹450</p>
+                <button class="addToCart" onclick="addToCart(18)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/kids2.webp" alt="">
+            <p class="name">Cow Gang Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹500</p>
+                <button class="addToCart" onclick="addToCart(19)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/kids3.jpg" alt="">
+            <p class="name">Panda Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹600</p>
+                <button class="addToCart" onclick="addToCart(20)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/kids4.webp" alt="">
+            <p class="name">McQueen Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹650</p>
+                <button class="addToCart" onclick="addToCart(21)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/kids5.jpg" alt="">
+            <p class="name">Bulldozer Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹700</p>
+                <button class="addToCart" onclick="addToCart(22)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/kids6.jpg" alt="">
+            <p class="name">Cats Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹900</p>
+                <button class="addToCart" onclick="addToCart(23)" href="">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bar_grid pad_xs">
+        <div class="bars "></div>
+        <div class="pad_text">
+            <p class="pad" id="anniversary-cake">ANNIVERSARY CAKES</p>
+        </div>
+        <div class="bars"></div>
+    </div>
+    <div class="grid title">
+        <div class="">
+            <img class="image" src="images/ann1.webp" alt="">
+            <p class="name">White Anniversary Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹500</p>
+                <button class="addToCart" onclick="addToCart(24)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/ann2.webp" alt="">
+            <p class="name">Red Velvet Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹650</p>
+                <button class="addToCart" onclick="addToCart(25)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/ann3.webp" alt="">
+            <p class="name">Violet Cream Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹700</p>
+                <button class="addToCart" onclick="addToCart(26)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/ann4.webp" alt="">
+            <p class="name">White Sweet Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹500</p>
+                <button class="addToCart" onclick="addToCart(27)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/ann5.webp" alt="">
+            <p class="name">Heart Chocolate Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹550</p>
+                <button class="addToCart" onclick="addToCart(28)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/ann6.jpg" alt="">
+            <p class="name">Love Balloon Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹450</p>
+                <button class="addToCart" onclick="addToCart(29)" href="">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bar_grid pad_xs">
+        <div class="bars "></div>
+        <div class="pad_text">
+            <p class="pad" id="eggless-cake">EGGLESS CAKES</p>
+        </div>
+        <div class="bars"></div>
+    </div>
+    <div class="grid title">
+        <div class="">
+            <img class="image" src="images/eggl1.jpg" alt="">
+            <p class="name">Vanilla Forest Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹200</p>
+                <button class="addToCart" onclick="addToCart(30)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/eggl2.jpeg" alt="">
+            <p class="name">Choco Lump Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹300</p>
+                <button class="addToCart" onclick="addToCart(31)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/eggl3.jpg" alt="">
+            <p class="name">Choco Nugget Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹250</p>
+                <button class="addToCart" onclick="addToCart(32)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/eggl4.jpg" alt="">
+            <p class="name">Choco Vanilla Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹400</p>
+                <button class="addToCart" onclick="addToCart(33)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/eggl5.jpg" alt="">
+            <p class="name">CrossChoco Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹600</p>
+                <button class="addToCart" onclick="addToCart(34)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/eggl6.webp" alt="">
+            <p class="name">Caramel Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹500</p>
+                <button class="addToCart" onclick="addToCart(35)" href="">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bar_grid pad_xs">
+        <div class="bars "></div>
+        <div class="pad_text">
+            <p class="pad" id="pinata-cake">PINATA CAKES</p>
+        </div>
+        <div class="bars"></div>
+    </div>
+    <div class="grid title">
+        <div class="">
+            <img class="image" src="images/pin1.webp" alt="">
+            <p class="name">Choco Ball Pinata Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹650</p>
+                <button class="addToCart" onclick="addToCart(36)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/pin2.jpeg" alt="">
+            <p class="name">Choco Heart Pinata Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹650</p>
+                <button class="addToCart" onclick="addToCart(37)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/pin3.webp" alt="">
+            <p class="name">Ferrero Pinata Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹800</p>
+                <button class="addToCart" onclick="addToCart(38)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/pin4.webp" alt="">
+            <p class="name">ChocoUni Pinata Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹850</p>
+                <button class="addToCart" onclick="addToCart(39)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/pin5.jpg" alt="">
+            <p class="name">Car Pinata Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹800</p>
+                <button class="addToCart" onclick="addToCart(40)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/pin6.webp" alt="">
+            <p class="name">Gems Pinata Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹700</p>
+                <button class="addToCart" onclick="addToCart(41)" href="">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bar_grid pad_xs">
+        <div class="bars "></div>
+        <div class="pad_text">
+            <p class="pad" id="photo-cake">PHOTO CAKES</p>
+        </div>
+        <div class="bars"></div>
+    </div>
+    <div class="grid title">
+        <div class="">
+            <img class="image" src="images/photo1.webp" alt="">
+            <p class="name">Dark Brown Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹550</p>
+                <button class="addToCart" onclick="addToCart(42)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/photo2.webp" alt="">
+            <p class="name">White Cherry Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹450</p>
+                <button class="addToCart" onclick="addToCart(43)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/photo3.jpg" alt="">
+            <p class="name">Pink Blossom Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹400</p>
+                <button class="addToCart" onclick="addToCart(44)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/photo4.webp" alt="">
+            <p class="name">KitKat Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹800</p>
+                <button class="addToCart" onclick="addToCart(45)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/photo5.jpg" alt="">
+            <p class="name">ChocoBlock Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹600</p>
+                <button class="addToCart" onclick="addToCart(46)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/photo6.jpg" alt="">
+            <p class="name">WhiteWall Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹500</p>
+                <button class="addToCart" onclick="addToCart(47)" href="">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bar_grid pad_xs">
+        <div class="bars "></div>
+        <div class="pad_text">
+            <p class="pad" id="egg-cakes">EGG CAKES</p>
+        </div>
+        <div class="bars"></div>
+    </div>
+    <div class="grid title">
+        <div class="">
+            <img class="image" src="images/egg1.jpeg" alt="">
+            <p class="name">ColorEgg Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹600</p>
+                <button class="addToCart" onclick="addToCart(48)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/egg2.jpg" alt="">
+            <p class="name">EggBasket Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹900</p>
+                <button class="addToCart" onclick="addToCart(49)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/egg3.webp" alt="">
+            <p class="name">Omelette Vanilla Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹300</p>
+                <button class="addToCart" onclick="addToCart(50)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/egg4.jpg" alt="">
+            <p class="name">Eggloo Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹600</p>
+                <button class="addToCart" onclick="addToCart(51)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/egg5.webp" alt="">
+            <p class="name">BlueNest Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹450</p>
+                <button class="addToCart" onclick="addToCart(52)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/egg6.jpg" alt="">
+            <p class="name">Dessert Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹500</p>
+                <button class="addToCart" onclick="addToCart(53)" href="">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bar_grid pad_xs">
+        <div class="bars "></div>
+        <div class="pad_text">
+            <p class="pad" id="luxury-chocolate-cake">LUXURY CHOCOLATE CAKES</p>
+        </div>
+        <div class="bars"></div>
+    </div>
+    <div class="grid title">
+        <div class="">
+            <img class="image" src="images/lux1.png" alt="">
+            <p class="name">Dripco Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹400</p>
+                <button class="addToCart" onclick="addToCart(54)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/lux2.webp" alt="">
+            <p class="name">ChocoRib Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹450</p>
+                <button class="addToCart" onclick="addToCart(55)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/lux3.jpg" alt="">
+            <p class="name">Chocopearl Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹500</p>
+                <button class="addToCart" onclick="addToCart(56)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/lux4.webp" alt="">
+            <p class="name">Panco Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹500</p>
+                <button class="addToCart" onclick="addToCart(57)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/lux5.webp" alt="">
+            <p class="name">Heart Forest Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹600</p>
+                <button class="addToCart" onclick="addToCart(58)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/lux6.webp" alt="">
+            <p class="name">Miniwrap Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹300</p>
+                <button class="addToCart" onclick="addToCart(59)" href="">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bar_grid pad_xs">
+        <div class="bars "></div>
+        <div class="pad_text">
+            <p class="pad" id="custom-cakes">CUSTOM CAKES</p>
+        </div>
+        <div class="bars"></div>
+    </div>
+    <div class="grid title">
+        <div class="">
+            <img class="image" src="images/cus1.jpg" alt="">
+            <p class="name">Burger Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹700</p>
+                <button class="addToCart" onclick="addToCart(60)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/cus2.jpg" alt="">
+            <p class="name">Wall-e Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹2000</p>
+                <button class="addToCart" onclick="addToCart(61)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/cus3.jpg" alt="">
+            <p class="name">Unicorn Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹700</p>
+                <button class="addToCart" onclick="addToCart(62)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/cus4.webp" alt="">
+            <p class="name">Cindrella Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹1000</p>
+                <button class="addToCart" onclick="addToCart(63)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/cus5.jpg" alt="">
+            <p class="name">Happy Ending Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹1500</p>
+                <button class="addToCart" onclick="addToCart(64)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/cus6.jpg" alt="">
+            <p class="name">Falling Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹1800</p>
+                <button class="addToCart" onclick="addToCart(65)" href="">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bar_grid pad_xs">
+        <div class="bars "></div>
+        <div class="pad_text">
+            <p class="pad" id="cheese-cakes">CHEESE CAKES</p>
+        </div>
+        <div class="bars"></div>
+    </div>
+    <div class="grid title">
+        <div class="">
+            <img class="image" src="images/cheese1.jpg" alt="">
+            <p class="name">Jam Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹200</p>
+                <button class="addToCart" onclick="addToCart(66)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/cheese2.jpg" alt="">
+            <p class="name">White Strawberry Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹600</p>
+                <button class="addToCart" onclick="addToCart(67)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/cheese3.jpg" alt="">
+            <p class="name">Silver Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹300</p>
+                <button class="addToCart" onclick="addToCart(68)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/cheese4.jpg" alt="">
+            <p class="name">Pie Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹400</p>
+                <button class="addToCart" onclick="addToCart(69)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/cheese5.jpg" alt="">
+            <p class="name">Honey Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹400</p>
+                <button class="addToCart" onclick="addToCart(70)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/cheese6.jpg" alt="">
+            <p class="name">Orange flower Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹300</p>
+                <button class="addToCart" onclick="addToCart(71)" href="">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bar_grid pad_xs">
+        <div class="bars "></div>
+        <div class="pad_text">
+            <p class="pad" id="cup-cakes">CUPCAKES</p>
+        </div>
+        <div class="bars"></div>
+    </div>
+    <div class="grid title">
+        <div class="">
+            <img class="image" src="images/cup1.jpg" alt="">
+            <p class="name">Kitkat Cupcake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹70</p>
+                <button class="addToCart" onclick="addToCart(72)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/cup2.jpg" alt="">
+            <p class="name">Strawberry Cupcake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹60</p>
+                <button class="addToCart" onclick="addToCart(73)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/cup3.jpg" alt="">
+            <p class="name">ChocoVan Cupcake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹50</p>
+                <button class="addToCart" onclick="addToCart(74)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/cup4.jpg" alt="">
+            <p class="name">Rainbow Cupcake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹50</p>
+                <button class="addToCart" onclick="addToCart(75)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/cup5.jpg" alt="">
+            <p class="name">Christmas Cupcake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹80</p>
+                <button class="addToCart" onclick="addToCart(76)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/cup6.jpg" alt="">
+            <p class="name">CreamTop Cupcake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹40</p>
+                <button class="addToCart" onclick="addToCart(77)" href="">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bar_grid pad_xs">
+        <div class="bars "></div>
+        <div class="pad_text">
+            <p class="pad" id="tier-cakes">TIER CAKES</p>
+        </div>
+        <div class="bars"></div>
+    </div>
+    <div class="grid title">
+        <div class="">
+            <img class="image" src="images/tier1.jpg" alt="">
+            <p class="name">White Tower Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹1100</p>
+                <button class="addToCart" onclick="addToCart(78)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/tier2.jpg" alt="">
+            <p class="name">Fruit Tower Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹1500</p>
+                <button class="addToCart" onclick="addToCart(79)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/tier3.jpg" alt="">
+            <p class="name">Blue Tower Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹1200</p>
+                <button class="addToCart" onclick="addToCart(80)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/tier4.jpg" alt="">
+            <p class="name">Flowery Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹1600</p>
+                <button class="addToCart" onclick="addToCart(81)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/tier5.jpg" alt="">
+            <p class="name">Globe Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹900</p>
+                <button class="addToCart" onclick="addToCart(82)" href="">Add To Cart</button>
+            </div>
+        </div>
+        <div class="">
+            <img class="image" src="images/tier6.jpg" alt="">
+            <p class="name">Vine Cake</p>
+            <div class="parent">
+                <p class='pricein'>Price: ₹1000</p>
+                <button class="addToCart" onclick="addToCart(83)" href="">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="admin_footer">
+        <div class="shu">
+            <a class="ad-color" href="admin.html">Admin Login</a><br>
+        </div>
+        <div class="sq">
+            <span>Contact Us</span><br>
+            <span>Ph-no: 8797110286</span><br>
+            <span>Email: kauldeep47@gmail.com</span>
+        </div>
+        <div class="gh">
+            <span><img style="height: 200px; width: 150px; border-radius: 100%; display: flex;"src="images/mapin.png" alt="" srcset=""></span><br>
+
+            <a href="https://www.google.com/maps/place/SJBIT+CSE+%26+ISE+Block/@12.9000854,77.4936915,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae3f15d4ef95f7:0xddaf8a04c60b74f4!8m2!3d12.9000532!4d77.4960341">Locate Us</a>
+        </div>
+    </div>
+
+
+
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="cart.js">
+    </script>
+    <script>
+        windows.location.replace(opening.html);
+    </script>
+</body>
+
+</html>
